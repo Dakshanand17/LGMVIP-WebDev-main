@@ -1,0 +1,313 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+ .container {
+    position: relative;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+  }
+ 
+ 
+
+  .topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+  }
+
+  .topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+  }
+  .topleft img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    opacity: 1.0;
+  }
+  
+  img { 
+    display: block;
+    width: 100%;
+    height:700px;
+    opacity: 0.6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   nav{
+    position:relative;
+    width:500px;
+    height: 50px;
+
+    }
+ ul{
+    display:flex;
+ }
+ li{
+    list-style:none;
+ }
+ a{ 
+    display:block;
+    width:calc(500px/5);
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color:#121212;
+    font-family: 'poppins',sans-serif;
+ }
+  .slide{
+    position: absolute;
+    bottom: 0;left: 0;
+    width: calc(500px/5);
+    height:4px;
+    background:#3642b7;
+    transition: .4s;
+ }
+
+ .About{
+     padding-top: 5%;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    text-align: center;
+ }
+ .About h3{
+     text-align: left;
+     padding: 2%;
+     padding-left: 5%;
+     font-size: 30px;
+     font-style:italic;
+ }
+ .row{
+     width: 100%;
+     margin: 0 auto;
+     display:flex;
+     justify-content: center;
+ }
+
+ .image {
+    display: block;
+    
+    width: 80%;
+    height: 450px;
+    opacity: 1.0;
+    margin-left: 2cm;
+    margin-right: 5cm;
+    margin-bottom: 2cm;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 2cm ;
+    right: 0;
+    height: 450px;
+    width: 80%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .gallery {
+    background-color: lightcoral;
+    position: relative;
+    padding-bottom: 0.5cm;
+
+  }
+
+  .gallery img{
+    display: block;
+    height: 500px;
+    opacity: 1.0;
+    width: 400px;
+  }
+   
+  /* Hide the images by default */
+.gallery .mySlides {
+  display: none;
+  background-color:lightcoral;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.gallery .cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.gallery .prev,
+.gallery .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color:black;
+  font-weight: bold;
+  font-size: 70px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.gallery .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.gallery .prev:hover,
+.gallery .next:hover {
+  background-color:white;
+}
+
+/* Number text (1/3 etc) */
+.gallery .numbertext {
+  color: black;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.gallery .caption-container {
+  text-align: center;
+  font-style: bold;
+  background-color: #222;
+  padding: 7px 20px;
+  color: white;
+}
+
+.gallery .row:after {
+  content: "";
+  display: table;
+  background-color: white;
+  clear: both;
+}
+
+/* Six columns side by side */
+.gallery .column {
+  float:none;
+  
+
+  background-color: white;
+}
+
+/* Add a transparency effect for thumnbail images */
+.gallery .demo {
+  opacity: 0.6;
+}
+
+.gallery .active,
+.gallery .demo:hover {
+  opacity: 1;
+}
+.gallery h2{
+    text-align: left;
+    padding: 2%;
+    padding-left: 5%;
+    font-size: 30px;
+    font-style:italic;
+}
+.contact{
+     width: 100%;
+     padding-top: 0.5cm;
+     margin:  auto;
+     padding:1cm;
+     display:flex;
+     justify-content: center;
+     
+     
+}
+  
+.contact .border{
+  position: relative;
+  margin-right: 3cm;
+  width: 290px;
+  height: 380px;
+  background: linear-gradient(135deg,#FF5789 0%,#A704FD 100%);
+  display: flex;
+  padding:0.8cm;
+  place-content: center;
+  border-radius: 8px;
+}
+.contact .border .content{
+  position: absolute;
+  width:280px;
+  height:370px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 1rem;
+  background-color: turquoise;
+}
+
+.contact .border .content h1{
+    padding: 2%;
+    padding-left: 5%;
+    font-size: 50px;
+    font-style:italic;
+}
+.contact .border .content p{
+  padding:2%;
+  font-size: 21px;
+  font-style: oblique;
+}
+
+.address {
+  position: relative;
+  background-color: black;
+  display: flex;
+  padding: 0cm;
+}
+
+.address .left{
+  place-content: left;
+ 
+ 
+}
+
+.address .right{
+  place-content: right;
+  padding:1cm;
+  font-size: 50px;
+  margin-right: 2cm;
+  margin-left: 1cm;
+  font-style: oblique;
+  color:white;
+}
+.address .left a{
+  width:90%;
+  height:60%;
+  padding:1cm;
+  
+}
